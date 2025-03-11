@@ -2,93 +2,239 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OrganizaÁ„o das Aulas</title>
+    <meta 
+
+name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organiza√ß√£o das 
+
+Aulas - Fisioterapia</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, 
+
+sans-serif;
             text-align: center;
             background-color: #f4f4f4;
-            margin: 0;
+           
+
+ margin: 0;
             padding: 0;
+            position: relative;
+            overflow: 
+
+hidden;
+        }
+        /* Anima√ß√£o do fundo com ossos */
+        @keyframes moverOssos {
+   
+
+         0% { background-position: 0 0; }
+            50% { background-position: 0 20px; }
+  
+
+          100% { background-position: 0 0; }
+        }
+        body::before {
+            
+
+content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+         
+
+   width: 100%;
+            height: 100%;
+            background-image: url
+
+('imagens/ossos.jpg');
+            background-size: 150px;
+            background-repeat: 
+
+repeat;
+            opacity: 0.1;
+            z-index: -1;
+            animation: moverOssos 
+
+5s infinite linear alternate;
+        }
+        /* Cabe√ßalho */
+        header {
+            
+
+background: #007BFF;
+            color: white;
+            padding: 15px;
+            
+
+display: flex;
+            align-items: center;
+            justify-content: center;
+         
+
+   position: relative;
+        }
+        .logo {
+            position: absolute;
+            
+
+left: 20px;
+            width: 50px;
         }
         .container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+ 
+
+           grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            max-width: 800px;
+            max-
+
+width: 800px;
             margin: 50px auto;
             padding: 20px;
         }
-        .btn {
+        .btn 
+
+{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: 
+
+center;
             justify-content: center;
             padding: 15px;
-            background: white;
+            
+
+background: white;
             border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 10px 
+
+rgba(0, 0, 0, 0.2);
             text-decoration: none;
             color: black;
-            font-weight: bold;
+            
+
+font-weight: bold;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        .btn:hover {
+        
+
+.btn:hover {
             transform: scale(1.05);
-            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 4px 4px 15px rgba
+
+(0, 0, 0, 0.3);
         }
         .btn img {
             width: 80px;
-            height: 80px;
+            height: 
+
+80px;
             border-radius: 10px;
             margin-bottom: 10px;
+        }
+        /* 
+
+Rodap√© */
+        footer {
+            background: #007BFF;
+            color: white;
+         
+
+   padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Minhas MatÈrias</h1>
+    
+
+<header>
+        <img src="imagens/logo.jpg" alt="Logo Fisioterapia" class="logo">
+        
+
+<h1>Minhas Mat√©rias - Fisioterapia</h1>
+    </header>
     <div class="container">
-        <a href="materias/anatomia.html" class="btn">
-            <img src="imagens/anatomia.avif" alt="Anatomia">
+        <a 
+
+href="materias/anatomia.html" class="btn">
+            <img src="imagens/anatomia.avif" 
+
+alt="Anatomia">
             Anatomia
         </a>
-        <a href="materias/bioquimica.html" class="btn">
-            <img src="imagens/bioquimica.png" alt="BioquÌmica">
-            BioquÌmica
+        <a href="materias/bioquimica.html" 
+
+class="btn">
+            <img src="imagens/bioquimica.png" alt="Bioqu√≠mica">
+            
+
+Bioqu√≠mica
         </a>
         <a href="materias/materia3.html" class="btn">
-            <img src="imagens/materia3.jpg" alt="MatÈria 3">
-            MatÈria 3
+            
+
+<img src="imagens/materia3.jpg" alt="Mat√©ria 3">
+            Mat√©ria 3
         </a>
-        <a href="materias/materia4.html" class="btn">
-            <img src="imagens/materia4.jpg" alt="MatÈria 4">
-            MatÈria 4
+        
+
+<a href="materias/materia4.html" class="btn">
+            <img src="imagens/materia4.jpg" 
+
+alt="Mat√©ria 4">
+            Mat√©ria 4
         </a>
-        <a href="materias/materia5.html" class="btn">
-            <img src="imagens/materia5.jpg" alt="MatÈria 5">
-            MatÈria 5
+        <a href="materias/materia5.html" 
+
+class="btn">
+            <img src="imagens/materia5.jpg" alt="Mat√©ria 5">
+            
+
+Mat√©ria 5
         </a>
         <a href="materias/materia6.html" class="btn">
-            <img src="imagens/materia6.jpg" alt="MatÈria 6">
-            MatÈria 6
+            <img 
+
+src="imagens/materia6.jpg" alt="Mat√©ria 6">
+            Mat√©ria 6
         </a>
-        <a href="materias/materia7.html" class="btn">
-            <img src="imagens/materia7.jpg" alt="MatÈria 7">
-            MatÈria 7
+        <a 
+
+href="materias/materia7.html" class="btn">
+            <img src="imagens/materia7.jpg" 
+
+alt="Mat√©ria 7">
+            Mat√©ria 7
         </a>
-        <a href="materias/materia8.html" class="btn">
-            <img src="imagens/materia8.jpg" alt="MatÈria 8">
-            MatÈria 8
+        <a href="materias/materia8.html" 
+
+class="btn">
+            <img src="imagens/materia8.jpg" alt="Mat√©ria 8">
+            
+
+Mat√©ria 8
         </a>
         <a href="materias/materia9.html" class="btn">
-            <img src="imagens/materia9.jpg" alt="MatÈria 9">
-            MatÈria 9
+            <img 
+
+src="imagens/materia9.jpg" alt="Mat√©ria 9">
+            Mat√©ria 9
         </a>
-        <a href="materias/materia10.html" class="btn">
-            <img src="imagens/materia10.jpg" alt="MatÈria 10">
-            MatÈria 10
+        <a 
+
+href="materias/materia10.html" class="btn">
+            <img src="imagens/materia10.jpg" 
+
+alt="Mat√©ria 10">
+            Mat√©ria 10
         </a>
     </div>
+    <footer>
+        <p>&copy; 
+
+2025 Organiza√ß√£o das Aulas - Fisioterapia</p>
+    </footer>
 </body>
 </html>
