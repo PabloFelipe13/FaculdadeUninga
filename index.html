@@ -6,226 +6,152 @@
     <title>Organização das Aulas - Fisioterapia</title>
     <style>
         body {
-            font-family: Arial, 
-sans-serif;
+            font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f4f4f4;
- margin: 0;
+            margin: 0;
             padding: 0;
             position: relative;
-            overflow: 
-
-hidden;
+            overflow: hidden;
         }
         /* Animação do fundo com ossos */
         @keyframes moverOssos {
-   
-
-         0% { background-position: 0 0; }
+            0% { background-position: 0 0; }
             50% { background-position: 0 20px; }
-  
-
-          100% { background-position: 0 0; }
+            100% { background-position: 0 0; }
         }
         body::before {
-            
-
-content: "";
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
-         
-
-   width: 100%;
+            width: 100%;
             height: 100%;
             background-image: url('imagens/ossos.jpg');
             background-size: 150px;
-            background-repeat: 
-
-repeat;
+            background-repeat: repeat;
             opacity: 0.1;
             z-index: -1;
-            animation: moverOssos 
-
-5s infinite linear alternate;
+            animation: moverOssos 5s infinite linear alternate;
         }
         /* Cabeçalho */
         header {
-            
-
-background: #007BFF;
+            background: #007BFF;
             color: white;
             padding: 15px;
-            
-
-display: flex;
+            display: flex;
             align-items: center;
             justify-content: center;
-         
-
-   position: relative;
+            position: relative;
         }
         .logo {
             position: absolute;
-            
-
-left: 20px;
+            left: 20px;
             width: 50px;
         }
         .container {
             display: grid;
- 
-
-           grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 20px;
-            max-
-
-width: 800px;
+            max-width: 800px;
             margin: 50px auto;
             padding: 20px;
         }
-        .btn 
-
-{
+        .btn {
             display: flex;
             flex-direction: column;
-            align-items: 
-
-center;
+            align-items: center;
             justify-content: center;
             padding: 15px;
-            
-
-background: white;
+            background: white;
             border-radius: 10px;
-            box-shadow: 2px 2px 10px 
-
-rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
             text-decoration: none;
             color: black;
-            
-
-font-weight: bold;
+            font-weight: bold;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        
-
-.btn:hover {
+        .btn:hover {
             transform: scale(1.05);
-            box-shadow: 4px 4px 15px rgba
-
-(0, 0, 0, 0.3);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
         }
         .btn img {
             width: 80px;
-            height: 
-
-80px;
+            height: 80px;
             border-radius: 10px;
             margin-bottom: 10px;
         }
-        /* 
-
-Rodapé */
+        /* Rodapé */
         footer {
             background: #007BFF;
             color: white;
-         
-
-   padding: 10px;
+            padding: 10px;
             margin-top: 20px;
+        }
+        /* Botão invisível para o admin */
+        .admin-button {
+            position: fixed;
+            bottom: 5px;
+            left: 5px;
+            width: 10px;
+            height: 10px;
+            opacity: 0;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    
-
-<header>
+    <header>
         <img src="imagens/logo.jpg" alt="Logo Fisioterapia" class="logo">
-        
-
-<h1>Minhas Matérias - Fisioterapia</h1>
+        <h1>Minhas Matérias - Fisioterapia</h1>
     </header>
     <div class="container">
-        <a 
-
-href="materias/anatomia.html" class="btn">
-            <img src="imagens/anatomia.avif" 
-
-alt="Anatomia">
+        <a href="materias/anatomia.html" class="btn">
+            <img src="imagens/anatomia.avif" alt="Anatomia">
             Anatomia
         </a>
-        <a href="materias/bioquimica.html" 
-
-class="btn">
+        <a href="materias/bioquimica.html" class="btn">
             <img src="imagens/bioquimica.png" alt="Bioquímica">
-            
-
-Bioquímica
+            Bioquímica
         </a>
         <a href="materias/materia3.html" class="btn">
-            
-
-<img src="imagens/materia3.jpg" alt="Matéria 3">
+            <img src="imagens/materia3.jpg" alt="Matéria 3">
             Matéria 3
         </a>
-        
-
-<a href="materias/materia4.html" class="btn">
-            <img src="imagens/materia4.jpg" 
-
-alt="Matéria 4">
+        <a href="materias/materia4.html" class="btn">
+            <img src="imagens/materia4.jpg" alt="Matéria 4">
             Matéria 4
         </a>
-        <a href="materias/materia5.html" 
-
-class="btn">
+        <a href="materias/materia5.html" class="btn">
             <img src="imagens/materia5.jpg" alt="Matéria 5">
-            
-
-Matéria 5
+            Matéria 5
         </a>
         <a href="materias/materia6.html" class="btn">
-            <img 
-
-src="imagens/materia6.jpg" alt="Matéria 6">
+            <img src="imagens/materia6.jpg" alt="Matéria 6">
             Matéria 6
         </a>
-        <a 
-
-href="materias/materia7.html" class="btn">
-            <img src="imagens/materia7.jpg" 
-
-alt="Matéria 7">
+        <a href="materias/materia7.html" class="btn">
+            <img src="imagens/materia7.jpg" alt="Matéria 7">
             Matéria 7
         </a>
-        <a href="materias/materia8.html" 
-
-class="btn">
+        <a href="materias/materia8.html" class="btn">
             <img src="imagens/materia8.jpg" alt="Matéria 8">
-            
-
-Matéria 8
+            Matéria 8
         </a>
         <a href="materias/materia9.html" class="btn">
-            <img 
-
-src="imagens/materia9.jpg" alt="Matéria 9">
+            <img src="imagens/materia9.jpg" alt="Matéria 9">
             Matéria 9
         </a>
-        <a 
-
-href="materias/materia10.html" class="btn">
-            <img src="imagens/materia10.jpg" 
-
-alt="Matéria 10">
+        <a href="materias/materia10.html" class="btn">
+            <img src="imagens/materia10.jpg" alt="Matéria 10">
             Matéria 10
         </a>
     </div>
     <footer>
-        <p>&copy; 
-
-2025 Organização das Aulas - Fisioterapia</p>
+        <p>&copy; 2025 Organização das Aulas - Fisioterapia</p>
     </footer>
+
+    <!-- Botão invisível para autenticação do administrador -->
+    <a href="https://pablofelipe13.github.io/PlanilhaAutentica-o/" class="admin-button"></a>
 </body>
 </html>
